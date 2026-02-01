@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Place Order</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="order-box">
+    <h2>Place Milk Order</h2>
+
+    <p id="userInfo"></p>
+<label>Milk Type</label>
+<select id="milkType">
+  <option value="cow">Cow Milk (₹70 / L)</option>
+  <option value="buffalo">Buffalo Milk (₹90 / L)</option>
+</select>
+    <label>Milk Quantity</label>
+    <select id="quantity">
+      <option value="1">1 Litre</option>
+      <option value="2">2 Litres</option>
+      <option value="3">3 Litres</option>
+      <option value="4">4 Litres</option>
+      <option value="5">5 Litres</option>
+      <option value="6">6 Litres</option>
+    </select>
+
+    <label>Date</label>
+    <input type="date" id="date" min="">
+<label>Delivery Address</label>
+<textarea id="address" rows="3" placeholder="House no, Street, Area"></textarea>
+    <label>Payment Method</label><br>
+    <input type="radio" name="payment" value="Cash on Delivery" checked> Cash on Delivery<br>
+    <input type="radio" name="payment" value="Monthly Billing"> Monthly Billing<br><br>
+
+   <button onclick="placeOrder()">Place Order</button>
+  </div>
+
+<script type="module" src="script.js"></script></body>
+</html>
